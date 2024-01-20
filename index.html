@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Speechbot - Home Page</title>
+    <style>
+        .container {
+            width: 80%; /* Increase the width as per your preference */
+            max-width: none;
+            margin: 100;
+            padding: 20px;
+            height: 500px; /* Adjust the height to create a rectangular container */
+		background-color:white;
+		color: black;
+		border: 2px solid white;
+        }
+
+        /* Highlight style for the "Use SpeechBot" link */
+        .highlight-link {
+            background-color: white;
+            color: black;
+            padding: 8px 16px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="blue-header">
+            <h1>Speechbot</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Signup</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#" id="useSpeechBotButton" class="highlight-link">Use SpeechBot</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <div class="container">
+            <h2>What is Speechbot?</h2>
+            <p>
+                Speechbot is an advanced speech recognition system designed to make your life easier. 
+                Our mission is to provide a seamless and natural interaction experience, allowing users to communicate with technology in a more human way.
+            </p>
+       
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <div class="feature">
+            <h3>Accurate Speech Recognition</h3>
+            <p>Our advanced technology ensures precise speech recognition for various applications.</p>
+        </div>
+        <div class="feature">
+            <h3>User-Friendly Interface</h3>
+            <p>Easy-to-use interface for both beginners and experts.</p>
+        </div>
+        <div class="feature">
+            <h3>Cloud Integration</h3>
+            <p>Seamlessly integrate speech recognition into your apps with cloud-based services.</p>
+        </div>
+    </section>
+ </div>
+    </section>
+
+    <script>
+        // Function to check if the user is logged in
+        function checkLoginStatus() {
+            // Simulate a logged-in user (you can change this to true to simulate being logged in)
+            const userLoggedIn = true;
+
+            // Get the "Use SpeechBot" button element
+            const useSpeechBotButton = document.getElementById("useSpeechBotButton");
+
+            // Check if the user is logged in
+            if (!userLoggedIn) {
+                // Redirect to the login page if the user is not logged in
+                useSpeechBotButton.href = "login.html";
+            }
+        }
+
+        // Call the function to check login status when the page loads
+        checkLoginStatus();
+    </script>
+</body>
+</html>

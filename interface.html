@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>SpeechBot</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Welcome to SpeechBot</h1>
+
+        <div class="speech-container">
+            <div class="textarea">
+                <div class="message-container" id="message-container" style="overflow-y: scroll;">
+                    <!-- Bot's response will be displayed here -->
+                    <div class="message bot-message">
+                        <p>Bot: Welcome to the Speechbot !!</p>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <!-- User's input will be entered here -->
+                    <input type="text" id="user-input" placeholder="Enter your message...">
+                    <button onclick="sendMessage()">Send</button>
+                    <button id="voice-button" onclick="startVoiceInput()">
+                        <i class="fa-solid fa-microphone fa-beat-fade fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                    <button id="speak-button" onclick="speakBotResponse()">
+                        <i class="fa-solid fa-volume-up fa-xl" style="color: #ffffff;"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
